@@ -1,66 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>コーヒーイベント</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #fafafa;
-      color: #333;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .flyer {
-      max-width: 600px;
-      margin: auto;
-      background: #fff;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 12px;
-      color: #5D3A00;
-    }
-
-    .info {
-      font-size: 16px;
-      margin-bottom: 24px;
-      line-height: 1.6;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #5D3A00;
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 16px;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #7B4C10;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コーヒーイベント - Coffee Lovers Gathering</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="flyer">
-    <h1>コーヒー好きのためのイベント</h1>
-    <div class="info">
-      📍 開催場所：〇〇カフェ（東京都渋谷区〇〇）<br>
-      🕒 開催日時：2025年7月20日（日）14:00〜16:00<br>
-      ☕ 内容：ハンドドリップ体験／豆の飲み比べ／プロの焙煎士によるトーク
+  <div class="flyer-container">
+    <div class="background-overlay"></div>
+    
+    <div class="content">
+      <header class="event-header">
+        <h1 class="event-title">Coffee Lovers<br>Gathering</h1>
+        <p class="event-subtitle">特別なコーヒー体験をお楽しみください</p>
+      </header>
+
+      <div class="event-details">
+        <div class="detail-card">
+          <h2>📅 日時</h2>
+          <p>2024年2月15日（土）<br>14:00 - 17:00</p>
+        </div>
+
+        <div class="detail-card">
+          <h2>📍 場所</h2>
+          <p>東京都渋谷区恵比寿1-2-3<br>カフェ・ラ・モード 2F</p>
+        </div>
+
+        <div class="detail-card">
+          <h2>☕ 内容</h2>
+          <ul>
+            <li>プロによるコーヒー淹れ方講座</li>
+            <li>世界各国のコーヒー試飲</li>
+            <li>ラテアート体験</li>
+            <li>コーヒー豆の焙煎見学</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <h2>💰 参加費</h2>
+          <p>3,500円（税込）<br><small>コーヒー・軽食込み</small></p>
+        </div>
+
+        <div class="detail-card">
+          <h2>👥 定員</h2>
+          <p>20名様限定<br><small>先着順</small></p>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <p class="cta-text">素敵なコーヒーの時間を一緒に過ごしませんか？</p>
+        <a href="https://forms.gle/61UsKzpfuR7D1xMR7" class="apply-button" target="_blank">
+          今すぐ申し込む
+        </a>
+        <p class="note">※お申し込みは外部フォームが開きます</p>
+      </div>
     </div>
-    <a class="btn" href="https://forms.gle/61UsKzpfuR7D1xMR7" target="_blank">
-      申し込みはこちら
-    </a>
   </div>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
