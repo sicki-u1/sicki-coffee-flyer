@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>イベントフライヤー</title>
+  <title>コーヒーイベント</title>
   <style>
-    body { text-align: center; font-family: sans-serif; }
-    img { max-width: 90%; margin-top: 20px; }
-    .btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #0070f3;
-      color: white;
-      border: none;
-      border-radius: 5px;
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #fafafa;
+      color: #333;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .flyer {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 12px;
+      color: #5D3A00;
+    }
+
+    .info {
       font-size: 16px;
-      text-decoration: none;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .btn {
       display: inline-block;
+      background: #5D3A00;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #7B4C10;
     }
   </style>
 </head>
 <body>
-  <h1>コーヒーイベントのご案内</h1>
-  <img src="https://your-image-url.jpg" alt="フライヤー画像">
-  <br>
-  <a href="https://申し込みフォームのURL" class="btn">申し込む</a>
+  <div class="flyer">
+    <h1>コーヒー好きのためのイベント</h1>
+    <div class="info">
+      📍 開催場所：〇〇カフェ（東京都渋谷区〇〇）<br>
+      🕒 開催日時：2025年7月20日（日）14:00〜16:00<br>
+      ☕ 内容：ハンドドリップ体験／豆の飲み比べ／プロの焙煎士によるトーク
+    </div>
+    <a class="btn" href="https://forms.gle/61UsKzpfuR7D1xMR7" target="_blank">
+      申し込みはこちら
+    </a>
+  </div>
 </body>
 </html>
